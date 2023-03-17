@@ -91,3 +91,51 @@ header {
         text-decoration: none;
     }
 }
+
+.box {
+    display: flex;
+    gap: 24px;
+    padding: 32px 24px;
+    max-width: 100%;
+    height: auto;
+}
+
+.gray {
+    background-color: rgb(191, 190, 190);
+}
+
+.box img {
+    max-width: 60%;
+    object-fit: contain;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    color: rgb(55, 54, 54); 
+    justify-content: center;
+    gap: 20px;
+}
+
+.right-column h1 {
+    margin: 0;
+    line-height: 45px;
+    letter-spacing: .7px;
+}
+
+.right-column h3 {
+    margin: 0;
+    font-weight: 500; 
+}
+
+.right-column a {
+    margin: 0;
+    padding: 8px;
+    margin-top: 8px;
+    background-color:rgb(55, 54, 54); 
+    color:rgb(238, 237, 237);
+    max-width: 100%;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: .7px;
+}
