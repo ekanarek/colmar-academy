@@ -139,3 +139,30 @@ header {
     text-decoration: none;
     letter-spacing: .7px;
 }
+
+@media screen and (max-width: 480px) {
+    .box {
+        padding: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .box img {
+        min-width: 100%;
+    }
+
+    .right-column {
+        padding: 32px 16px;
+        gap: 0;
+    }
+
+    .right-column h3 {
+        margin: 24px 0;
+    }
+
+    .right-column a {
+        margin: 0;
+        color:rgb(238, 237, 237);
+        background-color:rgb(141, 141, 141)
+    }
+}
