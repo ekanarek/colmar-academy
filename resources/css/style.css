@@ -2,12 +2,13 @@ body {
     font-family: 'Jost', sans-serif;
     font-size: 16px;
     margin: 0;
+    padding: 0;
     overflow-x: scroll;
 }
 
 ul, li {
-    padding: 0px; 
-    margin: 0px;
+    padding: 0; 
+    margin: 0;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
     position: sticky;
     top: 0;
     background-color: white; 
-    border-bottom: 1px solid gainsboro;
+    border-bottom: 1px solid rgb(231, 230, 230);
     display: flex; 
     align-items: center;
     justify-content: space-between;
@@ -75,7 +76,6 @@ header {
 
     #mobile-nav {
         flex-basis: 100%;
-        opacity: 0.6;
         margin-top: 7px;
         margin-left: 24px;
     }
@@ -101,7 +101,7 @@ header {
 }
 
 .gray {
-    background-color: rgb(191, 190, 190);
+    background-color: rgb(231, 230, 230);
 }
 
 .box img {
@@ -114,7 +114,6 @@ header {
     flex-direction: column;
     color: rgb(55, 54, 54); 
     justify-content: center;
-    gap: 20px;
 }
 
 .right-column h1 {
@@ -124,7 +123,7 @@ header {
 }
 
 .right-column h3 {
-    margin: 0;
+    margin: 20px 0;
     font-weight: 500; 
 }
 
@@ -138,6 +137,83 @@ header {
     text-align: center;
     text-decoration: none;
     letter-spacing: .7px;
+}
+
+.border {
+    border-left: 1px solid rgb(231, 230, 230);
+    margin-top: -32px;
+    margin-bottom: -32px;
+    margin-right: -24px;
+    padding: 32px 0;
+    width: 40%;
+}
+
+.column-box {
+    display: flex;
+    margin: 0;
+    padding: 16px;
+    border: 1px solid rgb(231, 230, 230);
+    border-left: 0;
+}
+
+.column-box img {
+    width: 35%;
+    height: auto;
+    margin-right: 16px;
+    flex-shrink: 0;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.first {
+    border-bottom: 0;
+}
+
+.box-content h3, p, a {
+    margin: 0;
+}
+
+.box-content p, a {
+    font-weight: 300;
+    letter-spacing: .3px; 
+}
+
+.box-content a {
+    background-color: transparent;
+    padding: 0;
+    color: rgb(108, 168, 220);
+}
+
+.left-column {
+    width: 60%;
+}
+
+.left-column img {
+    min-width: 100%;
+}
+
+.left-column h2 {
+    margin: 24px 0;
+}
+
+.left-column p {
+    font-size: 15px;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 32px;
+    letter-spacing: .2px;
+}
+
+.footnote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    letter-spacing: .1px;
 }
 
 @media screen and (max-width: 480px) {
